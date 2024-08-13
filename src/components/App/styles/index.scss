@@ -1,0 +1,49 @@
+@import 'node_modules/normalize-scss/sass/normalize/import-now';
+@import './global.scss';
+@import './theme/themeDark.scss';
+@import './theme//themeLight.scss';
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--wrapper-background-color-primary);
+  color: var(--wrapp-text-color-primary);
+  overflow: hidden;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 32px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    gap: 24px;
+    max-width: 728px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 5px;
+    max-width: 280px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 7px;
+  }
+}

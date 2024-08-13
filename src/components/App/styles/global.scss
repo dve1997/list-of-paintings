@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Heading';
+  src: url('../../../fonts/HeadingProMedium-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paragraph';
+  src: url('../../../fonts/Paragraph-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paragraph';
+  src: url('../../../fonts/Paragraph-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../../fonts/Inter18pt-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../../fonts/Inter18pt-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('../../../fonts/Cormorant-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  // Шрифты
+  --font-family-inter: 'Inter';
+  --font-family-heading: 'Heading';
+  --font-family-paragraph: 'Paragraph';
+  --font-family-cormorant: 'Cormorant';
+}
