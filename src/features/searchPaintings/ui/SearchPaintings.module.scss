@@ -1,0 +1,62 @@
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fieldSearch {
+  position: relative;
+  margin-right: 1.25rem;
+
+  & > input {
+    width: 18.6rem;
+    height: 2rem;
+    background-color: var(--list-background-color-secondary);
+    border: 1px solid var(--list-text-color-primary);
+    font-family: var(--font-family-inter);
+    color: var(--carousel-text-color-primary);
+    padding-left: 2.18rem;
+  }
+
+  & > img {
+    position: absolute;
+    top: 0.43rem;
+    left: 0.43rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    object-fit: cover;
+  }
+}
+
+.filterBtn {
+  background-color: var(--list-background-color-secondary);
+  cursor: pointer;
+}
+
+@media (max-width: 45.5rem) {
+  .fieldSearch {
+    & > input {
+      width: 16.1rem;
+      height: 2rem;
+    }
+  }
+}
+
+@media (max-width: 17.5rem) {
+  .fieldSearch {
+    & > input {
+      width: 11.6rem;
+      height: 1.8rem;
+    }
+  }
+}

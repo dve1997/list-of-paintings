@@ -1,0 +1,139 @@
+.body {
+  max-width: 19rem;
+  padding: 4%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--wrapper-background-color-primary);
+  color: var(--wrapp-text-color-primary);
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform 1s ease 0s;
+}
+
+.bodyDisplay {
+  transform: translateX(0);
+  transition: transform 1s ease 0s;
+}
+
+.cross {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+  margin-bottom: 4.3rem;
+  cursor: pointer;
+}
+
+.form {
+}
+
+.fields {
+  width: 100%;
+}
+
+.boxBtnTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.06rem;
+}
+
+.title {
+  font-family: var(--font-family-cormorant);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21rem;
+}
+
+.plus {
+  font-family: var(--font-family-cormorant);
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.21rem;
+  padding-bottom: 3%;
+}
+
+.fieldWide {
+  width: 100%;
+  padding: 2.6% 5%;
+  margin-bottom: 1.25rem;
+  background-color: var(--filter-background-color-secondary);
+  border: none;
+  color: var(--wrapp-text-color-primary);
+  font-family: var(--font-family-inter);
+
+  & > option {
+    color: var(--wrapp-text-color-primary);
+  }
+}
+
+.errorMessage {
+  color: red;
+}
+
+.fieldNarrow {
+  width: 20%;
+  padding: 2.6% 5%;
+  margin-right: 0.7rem;
+  margin-bottom: 13.75rem;
+  background-color: var(--filter-background-color-secondary);
+  border: none;
+  color: var(--wrapp-text-color-primary);
+  font-family: var(--font-family-inter);
+}
+
+.boxBtnChangeForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnShowTheResults {
+  font-family: var(--filter-text-color-primary-lg);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21rem;
+  text-decoration: underline;
+  background-color: var(--wrapper-background-color-primary);
+  color: var(--filter-text-color-primary-lg);
+  border: none;
+}
+
+.btnShowTheResults:hover {
+  color: var(--wrapp-text-color-primary);
+}
+
+.btnClear {
+  font-family: var(--filter-text-color-primary-lg);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21rem;
+  text-decoration: underline;
+  background-color: var(--wrapper-background-color-primary);
+  color: var(--filter-text-color-primary-lg);
+  border: none;
+}
+
+.btnClear:hover {
+  color: var(--wrapp-text-color-primary);
+}
+
+@media (max-width: 45.5rem) {
+  .body {
+    max-width: 18.2rem;
+  }
+}
+
+@media (max-width: 17.5rem) {
+  .body {
+    max-width: 14.5rem;
+  }
+}

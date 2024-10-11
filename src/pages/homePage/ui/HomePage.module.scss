@@ -1,0 +1,17 @@
+.body {
+  grid-column: 1/13;
+  padding: 0 1.4%;
+  position: relative;
+}
+
+@media (max-width: 45.5rem) {
+  .body {
+    grid-column: 1/9;
+  }
+}
+
+@media (max-width: 17.5rem) {
+  .body {
+    grid-column: 1/7;
+  }
+}

@@ -1,0 +1,26 @@
+.arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.87rem;
+  margin-bottom: 1.25rem;
+}
+
+.arrowLeft {
+  color: var(--wrapp-text-color-primary);
+  cursor: pointer;
+}
+
+.arrowLeft:hover {
+  color: var(--carousel-text-color-primary);
+}
+
+.arrowRight {
+  color: var(--wrapp-text-color-primary);
+  cursor: pointer;
+}
+
+.arrowRight:hover {
+  color: var(--carousel-text-color-primary);
+}

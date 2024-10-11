@@ -1,0 +1,47 @@
+@import 'node_modules/normalize-scss/sass/normalize/import-now';
+@import './global.scss';
+@import './theme/themeDark.scss';
+@import './theme//themeLight.scss';
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--wrapper-background-color-primary);
+  color: var(--list-text-color-primary);
+  overflow: hidden;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  max-width: 77.5rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 45.5rem) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+    max-width: 45.5rem;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: 17.5rem) {
+  .conteiner {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.31rem;
+    max-width: 17.5rem;
+    margin: 0 auto;
+    position: relative;
+  }
+}

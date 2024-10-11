@@ -1,0 +1,205 @@
+.body {
+  position: relative;
+  padding: 0 0 25% 0;
+  overflow: hidden;
+
+  & > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+}
+
+.infAboutAutorAndYear {
+  transform: translate(0, 218%);
+  transition: transform 1s ease 0s;
+  width: 18.75rem;
+  height: 5.12rem;
+  z-index: 1;
+  background-color: var(--wrapper-background-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.infAboutNameAndMuseum {
+  transform: translate(-100%, 118%);
+  transition: transform 1s ease 0s;
+  width: 18.75rem;
+  height: 5.12rem;
+  z-index: 1;
+  background-color: var(--wrapper-background-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.body:hover {
+  & > .infAboutAutorAndYear {
+    transform: translateY(318%);
+    transition: transform 1s ease 0s;
+  }
+
+  & > .infAboutNameAndMuseum {
+    transform: translate(0, 118%);
+    transition: transform 1s ease 0s;
+  }
+}
+
+.title {
+  font-family: var(--font-family-cormorant);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21rem;
+  border-left: 2px solid var(--list-text-color-accent);
+  padding-left: 1.25rem;
+  text-transform: uppercase;
+  color: var(--wrapp-text-color-primary);
+}
+
+.descr {
+  font-family: var(--font-family-inter);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.9rem;
+  border-left: 2px solid var(--list-text-color-accent);
+  padding-left: 1.25rem;
+  text-transform: uppercase;
+  color: var(--list-text-color-accent);
+}
+
+@media (max-width: 45.5rem) {
+  .body {
+    position: relative;
+    padding: 0 0 17% 0;
+    overflow: hidden;
+
+    & > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+
+  .infAboutAutorAndYear {
+    transform: translate(0, 195%);
+    transition: transform 1s ease 0s;
+    width: 18.75rem;
+    height: 4.12rem;
+    z-index: 1;
+    background-color: var(--wrapper-background-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infAboutNameAndMuseum {
+    transform: translate(-100%, 95%);
+    transition: transform 1s ease 0s;
+    width: 18.75rem;
+    height: 4.12rem;
+    z-index: 1;
+    background-color: var(--wrapper-background-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .body:hover {
+    & > .infAboutAutorAndYear {
+      transform: translateY(295%);
+      transition: transform 1s ease 0s;
+    }
+
+    & > .infAboutNameAndMuseum {
+      transform: translate(0, 95%);
+      transition: transform 1s ease 0s;
+    }
+  }
+}
+
+@media (max-width: 17.5rem) {
+  .body {
+    position: relative;
+    padding: 0 0 36% 0;
+    overflow: hidden;
+
+    & > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+  }
+
+  .infAboutAutorAndYear {
+    transform: translate(0, 318%);
+    transition: transform 1s ease 0s;
+    width: 14.75rem;
+    height: 2.81rem;
+    z-index: 1;
+    background-color: var(--wrapper-background-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .infAboutNameAndMuseum {
+    transform: translate(-100%, 218%);
+    transition: transform 1s ease 0s;
+    width: 14.75rem;
+    height: 2.81rem;
+    z-index: 1;
+    background-color: var(--wrapper-background-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .body:hover {
+    & > .infAboutAutorAndYear {
+      transform: translateY(418%);
+      transition: transform 1s ease 0s;
+    }
+
+    & > .infAboutNameAndMuseum {
+      transform: translate(0, 218%);
+      transition: transform 1s ease 0s;
+    }
+  }
+
+  .title {
+    font-family: var(--font-family-cormorant);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 0.9rem;
+    border-left: 2px solid var(--list-text-color-accent);
+    padding-left: 1.25rem;
+    text-transform: uppercase;
+    color: var(--wrapp-text-color-primary);
+  }
+
+  .descr {
+    font-family: var(--font-family-inter);
+    font-size: 0.5rem;
+    font-weight: 700;
+    line-height: 0.6rem;
+    border-left: 2px solid var(--list-text-color-accent);
+    padding-left: 1.25rem;
+    text-transform: uppercase;
+    color: var(--list-text-color-accent);
+  }
+}
